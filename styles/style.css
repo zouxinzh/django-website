@@ -1,0 +1,80 @@
+.navbar {
+    margin-bottom: 0;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+  }
+  
+.navbar li a, .navbar .navbar-brand {
+color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+color: #f4511e !important;
+background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+border-color: red;
+color: #fff !important;
+}
+/*
+Removes white gap between slides
+*/
+.carousel {
+    background:#444;
+  }
+.carousel-caption{
+    height: 50%;
+    background-size: cover;
+    background-position: center center;
+    
+} 
+.carousel-caption h1{
+    font-size:45px;
+    
+} 
+/*
+Forces image to be 100% width and not max width of 100%
+*/
+.carousel-item .img-fluid {
+width:100%;
+height:auto;
+}
+
+/* 
+anchors are inline so you need to make them block to go full width
+*/
+.carousel-item a {
+display: block;
+width:100%;
+}
+  
+body {
+    background-color: lightgreen;
+  }
+ 
+/* change style when the window size changed */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .navbar {
+        background-color:white;
+    }
+    .carousel-caption{
+        height: 50%;
+        background-size: cover;
+        background-position: center center;
+        
+    }
+    .carousel-caption h1
+    {
+       font-size:20px;
+    }
+
+}
