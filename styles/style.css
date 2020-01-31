@@ -67,13 +67,6 @@ width:100%;
  
 /* change style when the window size changed */
 @media only screen and (max-width: 600px) {
-    body {
-        background-color: grey;
-    }
-
-    .navbar {
-        background-color:white;
-    }
     .carousel-caption{
         height: 50%;
         background-size: cover;
