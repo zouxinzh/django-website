@@ -1,3 +1,12 @@
+body {
+    
+}
+.container-fluid {
+    padding: 60px 50px;
+}
+
+
+/* navbar style set up */
 .navbar {
     margin-bottom: 0;
     z-index: 9999;
@@ -9,7 +18,8 @@
   }
   
 .navbar li a, .navbar .navbar-brand {
-color: #fff !important;
+color:yellow !important;
+
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
@@ -28,13 +38,13 @@ Removes white gap between slides
     background:#444;
   }
 .carousel-caption{
-    height: 50%;
+    height: 60%;
     background-size: cover;
     background-position: center center;
     
 } 
 .carousel-caption h1{
-    font-size:45px;
+    font-size:80px;
     
 } 
 /*
@@ -53,14 +63,12 @@ display: block;
 width:100%;
 }
   
-body {
-    background-color: lightgreen;
-  }
+
  
 /* change style when the window size changed */
 @media only screen and (max-width: 600px) {
     body {
-        background-color: lightblue;
+        background-color: grey;
     }
 
     .navbar {
