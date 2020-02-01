@@ -1,5 +1,4 @@
 import datetime
-
 from django.db import models
 from django.utils import timezone
 
@@ -19,3 +18,14 @@ class Choice(models.Model):
     votes = models.IntegerField(default=0)
     def __str__(self):
         return self.choice_text
+
+class Contact(models.Model):
+    name     = models.CharField(max_length=50)
+    email    = models.EmailField()
+    phone    = models.TextField()
+    company  = models.TextField()       
+    message  = models.TextField()
+    
+    def __str__(self):
+        return f'{self.name} {self.email}'
+     

@@ -73,7 +73,7 @@
       <h2><strong>钢锄系列</strong></h2>
       <div class="row text-center">
         <div class="col-sm-3">
-          <div class="card"> {
+          <div class="card"> 
               <img class="img-fluid" src="{% static 'shunli/assets/products/hoes/shunli-hoe.JPG'%}" alt="顺利钢锄">
               <div class="card-body">
                 <h4 class="card-title">顺利钢锄</h4>
@@ -215,6 +215,9 @@
       </div>
       
       <div class="col-sm-7">
+      <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
         <div class="row">
           <div class="col-sm-6 form-group">
             <input class="form-control" id="name" name="name" placeholder="姓名" type="text" required>
@@ -237,6 +240,7 @@
             <button class="btn btn-info pull-right" type="submit">发送</button>
           </div>
         </div>
+        </form>
       </div>
     
 
