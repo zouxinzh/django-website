@@ -1,4 +1,5 @@
 {% load static %}
+{% load crispy_forms_tags %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -213,28 +214,33 @@
         <p><i class="fa fa-envelope" aria-hidden="true"></i> shunlitools@163.com</p>
         <p><i class="fa fa-users" aria-hidden="true"></i> 公众号: 嘉禾县顺利锻压工具有限公司</p>
       </div>
-      
+      {% comment %} reference for bootstrap django form {% endcomment %}
       <div class="col-sm-7">
       <form method="POST">
         {% csrf_token %}
-        {{form.as_p}}
+        {% comment %} {{form.as_p}} {% endcomment %}
         <div class="row">
           <div class="col-sm-6 form-group">
-            <input class="form-control" id="name" name="name" placeholder="姓名" type="text" required>
+            {% comment %} <input class="form-control" id="name" name="name" placeholder="姓名" type="text" required> {% endcomment %}
+            {{form.name|as_crispy_field}}
           </div>
           <div class="col-sm-6 form-group">
-            <input class="form-control" id="email" name="email" placeholder="邮箱" type="email" required>
+            {% comment %} <input class="form-control" id="email" name="email" placeholder="邮箱" type="email" required> {% endcomment %}
+            {{form.email|as_crispy_field}}
           </div>
         </div>
         <div class="row">
           <div class="col-sm-6 form-group">
-            <input class="form-control" id="phone" name="phone" placeholder="电话" type="text" required>
+            {% comment %} <input class="form-control" id="phone" name="phone" placeholder="电话" type="text" required> {% endcomment %}
+            {{form.phone|as_crispy_field}}
           </div>
           <div class="col-sm-6 form-group">
-            <input class="form-control" id="clientCompany" name="clientCompany" placeholder="公司" type="text" required>
+            {% comment %} <input class="form-control" id="clientCompany" name="clientCompany" placeholder="公司" type="text" required> {% endcomment %}
+            {{form.company|as_crispy_field}}
           </div>
         </div>
-        <textarea class="form-control" id="comments" name="comments" placeholder="更多内容" rows="5"></textarea><br>
+        {% comment %} <textarea class="form-control" id="comments" name="comments" placeholder="更多内容" rows="5"></textarea><br> {% endcomment %}
+        {{form.message|as_crispy_field}}
         <div class="row">
           <div class="col-sm-12 form-group">
             <button class="btn btn-info pull-right" type="submit">发送</button>
@@ -246,5 +252,4 @@
 
     </div>
 </div>
-
 </body>

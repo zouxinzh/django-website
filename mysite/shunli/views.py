@@ -14,7 +14,12 @@ def index(request):
             form.save()    
     else:
         form = ContactForm()
-    context = {'form':form,}
+    
+    context ={
+        'form':form,
+    }
+    # latest_question_list = Question.objects.order_by('-pub_date')[:5]
+    # context = {'latest_question_list': latest_question_list}
     return render(request, 'shunli/index.html', context)
 
 def detail(request, question_id):

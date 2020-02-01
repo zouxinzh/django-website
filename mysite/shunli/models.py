@@ -22,8 +22,8 @@ class Choice(models.Model):
 class Contact(models.Model):
     name     = models.CharField(max_length=50)
     email    = models.EmailField()
-    phone    = models.TextField()
-    company  = models.TextField()       
+    phone    = models.CharField(max_length=50)
+    company  = models.CharField(max_length=50)       
     message  = models.TextField()
     
     def __str__(self):
