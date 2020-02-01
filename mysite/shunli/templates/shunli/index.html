@@ -1,0 +1,246 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>顺利锻压有限公司官网</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!-- Latest font-awesome for icons -->
+  <script src="https://kit.fontawesome.com/fd10bdb6fa.js" crossorigin="anonymous"></script>
+  <!-- Self Defined Stylesheets -->
+  {% comment %} <link href="./styles/style.css" rel="stylesheet" type="text/css"> {% endcomment %}
+  <link rel="stylesheet" type="text/css" href="{% static 'shunli/style.css' %}">
+  <!-- Self Defiend Javascript   -->
+  <script src="{% static 'shunli/page.js' %}"></script>
+  
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="1">
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+      <a class="navbar-brand" href="#">顺利锻压工具</a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <!-- place the navbar on the right with ml-auto -->
+        <ul class="navbar-nav ml-auto" >
+          <li class="nav-item">
+                <a class="nav-link" href="#PRODUCT">主打产品</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ABOUT">关于我们</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#CONTACT">联系我们</a>
+          </li>
+          <li class="nav-item">
+              
+              <button type="button" class="btn btn-outline-success"><i class="fa fa-phone  fa-rotate-90" aria-hidden="true"></i>销售热线 0735-6773983</button>
+          </li>     
+        </ul>
+      </div> 
+      
+  </nav>
+  <!-- 主页大屏幕 -->
+  <!-- reference:https://codepen.io/JacobLett/pen/PjKLgK -->
+  <div class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
+      <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">  
+                <img src="{% static 'shunli/assets/images/factory-1.jpg'%}" alt="responsive image" class="d-block img-fluid">
+                  <div class="carousel-caption">
+                      <div>
+                          <h1>信誉至上 质量第一 诚信为本 互利互助</h1>
+                          <p>始于1993年</p>
+                      </div>
+                  </div>
+          </div>  
+      </div> 
+  </div>
+  <!-- banner -->
+  <div id="PRODUCT" class="container-fluid text-center bg-grey" style="background-color: antiquewhite;">
+    <h1><strong>主打产品</strong></h1>
+  </div>
+  <!-- 钢锄产品系列 -->
+  <div class="container-fluid text-center bg-grey">
+      <h2><strong>钢锄系列</strong></h2>
+      <div class="row text-center">
+        <div class="col-sm-3">
+          <div class="card"> {
+              <img class="img-fluid" src="{% static 'shunli/assets/products/hoes/shunli-hoe.JPG'%}" alt="顺利钢锄">
+              <div class="card-body">
+                <h4 class="card-title">顺利钢锄</h4>
+                <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+              </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card"> 
+                <img class="img-fluid" src="{% static 'shunli/assets/products/hoes/xiongma-hoe.JPG'%}" alt="雄马钢锄">
+                <div class="card-body">
+                  <h4 class="card-title">雄马钢锄</h4>
+                  <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card"> 
+                <img class="img-fluid" src="{% static 'shunli/assets/products/hoes/shuangmao-hoe.JPG'%}" alt="双猫钢锄">
+                <div class="card-body">
+                  <h4 class="card-title">双猫钢锄</h4>
+                  <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card"> 
+                <img class="img-fluid" src="{% static 'shunli/assets/products/hoes/hanguang-hoe.JPG'%}" alt="焊管钢锄">
+                <div class="card-body">
+                  <h4 class="card-title">焊管钢锄</h4>
+                  <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                </div>
+            </div> 
+        </div>
+    </div>
+  </div>
+  <div class="container-fluid text-center bg-grey">
+    <!-- 断线钳系列产品 -->
+    <h2><strong>断线钳系列</strong></h2>
+    <div class="row text-center">
+        <div class="col-sm-3">
+            <div class="card"> 
+                <img class="img-fluid" src="{% static 'shunli/assets/products/cutters/shunli-cutter-1.JPG'%}" alt="顺利断线钳">
+                <div class="card-body">
+                  <h4 class="card-title">顺利断线钳</h4>
+                  <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                </div>
+            </div> 
+        </div>
+        <div class="col-sm-3">
+            <div class="card"> 
+                <img class="img-fluid" src="{% static 'shunli/assets/products/cutters/xiongma-cutter-1.JPG'%}" alt="雄马断线钳">
+                <div class="card-body">
+                  <h4 class="card-title">雄马断线钳</h4>
+                  <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                </div>
+            </div> 
+        </div>
+        <div class="col-sm-3">
+            <div class="card"> 
+                <img class="img-fluid" src="{% static 'shunli/assets/products/cutters/shuangmao-cutter-1.JPG'%}" alt="双猫断线钳">
+                <div class="card-body">
+                  <h4 class="card-title">双猫断线钳</h4>
+                  <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                </div>
+            </div> 
+        </div>      
+    </div>
+  </div>
+    <!-- 管子钳系列 -->
+    <div class="container-fluid text-center bg-grey">
+    <h2><strong>管子钳系列</strong></h2>
+    <div class="row text-center">
+        <div class="col-sm-3">
+            <div class="card"> 
+                <img class="img-fluid" src="{% static 'shunli/assets/products/pipes/shuangmao-pipe1.JPG'%}" alt="双猫管子钳">
+                <div class="card-body">
+                  <h4 class="card-title">双猫管子钳</h4>
+                  <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                </div>
+            </div> 
+        </div>
+        <div class="col-sm-3">
+            <div class="card"> 
+                <img class="img-fluid" src="{% static 'shunli/assets/products/pipes/shunli-pipe-1.JPG'%}" alt="顺利管子钳">
+                <div class="card-body">
+                  <h4 class="card-title">双猫管子钳</h4>
+                  <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                </div>
+            </div> 
+       </div>
+    </div>
+    </div>
+  </div>
+
+
+<!-- Container (About Section) -->
+<div id="ABOUT"class="container-fluid text-center bg-grey" style="background-color: antiquewhite;">
+    <h1><strong>关于我们</strong></h1>
+</div>
+<div id="about" class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>顺利锻压工具有限公司介绍</h2><br>
+        <p>本公司成立于1993年，着＂信誉至上．质量第一．诚信为本．互利互助＂的宗旨．致力于生产的质量优良产品，热枕的服务广大消费者．公司有高标准式的厂房，占地面积２万多平方米．有雄厚的技术力量，先进的工艺装备和完善的检测手段. 公司主要产品有：锻压钢锄．断线钳．美式重型管子钳．三抓拉马系列工具．并拥有自己的品牌产品．如断线钳品牌：顺利．双猫．雄马．钢锄品牌：顺利，双猫．雄马．三叶．鑫鸡．椰树．劲豹．我们竭诚向国内外朋友提供最佳服务和精诚合作，欢迎合资，合作．来图来样加工．</p>
+      </div>
+      <div class="col-sm-6">
+          <img class="img-fluid" src="{% static 'shunli/assets/images/factory-3.jpg'%}" alt="顺利公司">
+      </div>
+    </div>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6">
+            <img class="img-fluid" src="{% static 'shunli/assets/images/factory-2.jpg'%}" alt="顺利公司">
+        </div>
+      <div class="col-sm-6">
+        <h2>专注打造高品质产品</h2><br>
+        <p>27年中，公司不断的精益求精，提升工艺，追求创新，专注于打造客户值得信赖，高质量耐用的产品. 所生产的产品畅销全国各地信守合同享誉国内外． </p>
+      </div>
+    </div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div class="container-fluid text-center bg-grey" style="background-color: antiquewhite;">
+    <h1><strong>联系方式</strong></h1>
+</div>
+<div id="CONTACT" class="container-fluid bg-grey" style="padding-top:70px;padding-bottom:70px">
+    <h2 class="text-center">商业洽谈</h2>
+    <div class="row">
+      <div class="col-sm-5">
+        <p><i class="fa fa-location-arrow" aria-hidden="true"></i> 湖南省嘉禾县塘村镇朝晖路</p>
+        <p><i class="fa fa-phone fa-rotate-90" aria-hidden="true"></i>  +0735-6773983</p>
+        <p><i class="fa fa-envelope" aria-hidden="true"></i> shunlitools@163.com</p>
+        <p><i class="fa fa-users" aria-hidden="true"></i> 公众号: 嘉禾县顺利锻压工具有限公司</p>
+      </div>
+      
+      <div class="col-sm-7">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="姓名" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="邮箱" type="email" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="phone" name="phone" placeholder="电话" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="clientCompany" name="clientCompany" placeholder="公司" type="text" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="更多内容" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-info pull-right" type="submit">发送</button>
+          </div>
+        </div>
+      </div>
+    
+
+    </div>
+</div>
+
+</body>
