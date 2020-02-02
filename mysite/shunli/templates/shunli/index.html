@@ -18,15 +18,17 @@
   <script src="https://kit.fontawesome.com/fd10bdb6fa.js" crossorigin="anonymous"></script>
   <!-- Self Defined Stylesheets -->
   {% comment %} <link href="./styles/style.css" rel="stylesheet" type="text/css"> {% endcomment %}
-  <link rel="stylesheet" type="text/css" href="{% static 'shunli/style.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static "shunli/css/style.css" %}">
   <!-- Self Defiend Javascript   -->
   <script src="{% static 'shunli/page.js' %}"></script>
   
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="1">
   <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
-      <a class="navbar-brand" href="#">顺利锻压工具</a>
       
+      <a class="navbar-brand" href="#">
+        <img src="{% static 'shunli/assets/images/shunli_logo_3.png'%}" alt="responsive image" style="width:160px;height:60px;">顺利锻压工具
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -42,14 +44,15 @@
           <li class="nav-item">
             <a class="nav-link" href="#CONTACT">联系我们</a>
           </li>
-          <li class="nav-item">
+          {% comment %} <li class="nav-item"> {% endcomment %}
               
-              <button type="button" class="btn btn-outline-success"><i class="fa fa-phone  fa-rotate-90" aria-hidden="true"></i>销售热线 0735-6773983</button>
-          </li>     
+          {% comment %} </li>      {% endcomment %}
         </ul>
+        <button id="salesButton" type="button" class="btn btn-outline-success"><i class="fa fa-phone  fa-rotate-90" aria-hidden="true"></i>销售热线 0735-6773983</button>
       </div> 
       
   </nav>
+  
   <!-- 主页大屏幕 -->
   <!-- reference:https://codepen.io/JacobLett/pen/PjKLgK -->
   <div class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
@@ -73,7 +76,7 @@
   <div class="container-fluid text-center bg-grey">
       <h2><strong>钢锄系列</strong></h2>
       <div class="row text-center">
-        <div class="col-sm-3">
+        <div class="col-3 col-sm-3">
           <div class="card"> 
               <img class="img-fluid" src="{% static 'shunli/assets/products/hoes/shunli-hoe.JPG'%}" alt="顺利钢锄">
               <div class="card-body">
@@ -82,7 +85,7 @@
               </div>
             </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-3 col-sm-3">
             <div class="card"> 
                 <img class="img-fluid" src="{% static 'shunli/assets/products/hoes/xiongma-hoe.JPG'%}" alt="雄马钢锄">
                 <div class="card-body">
@@ -91,7 +94,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-3 col-sm-3">
             <div class="card"> 
                 <img class="img-fluid" src="{% static 'shunli/assets/products/hoes/shuangmao-hoe.JPG'%}" alt="双猫钢锄">
                 <div class="card-body">
@@ -100,7 +103,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-3 col-sm-3">
             <div class="card"> 
                 <img class="img-fluid" src="{% static 'shunli/assets/products/hoes/hanguang-hoe.JPG'%}" alt="焊管钢锄">
                 <div class="card-body">
@@ -115,7 +118,7 @@
     <!-- 断线钳系列产品 -->
     <h2><strong>断线钳系列</strong></h2>
     <div class="row text-center">
-        <div class="col-sm-3">
+        <div class="col-3 col-sm-3">
             <div class="card"> 
                 <img class="img-fluid" src="{% static 'shunli/assets/products/cutters/shunli-cutter-1.JPG'%}" alt="顺利断线钳">
                 <div class="card-body">
@@ -124,7 +127,7 @@
                 </div>
             </div> 
         </div>
-        <div class="col-sm-3">
+        <div class="col-3 col-sm-3">
             <div class="card"> 
                 <img class="img-fluid" src="{% static 'shunli/assets/products/cutters/xiongma-cutter-1.JPG'%}" alt="雄马断线钳">
                 <div class="card-body">
@@ -133,7 +136,7 @@
                 </div>
             </div> 
         </div>
-        <div class="col-sm-3">
+        <div class="col-3 col-sm-3">
             <div class="card"> 
                 <img class="img-fluid" src="{% static 'shunli/assets/products/cutters/shuangmao-cutter-1.JPG'%}" alt="双猫断线钳">
                 <div class="card-body">
@@ -148,7 +151,7 @@
     <div class="container-fluid text-center bg-grey">
     <h2><strong>管子钳系列</strong></h2>
     <div class="row text-center">
-        <div class="col-sm-3">
+        <div class="col-3 col-sm-3">
             <div class="card"> 
                 <img class="img-fluid" src="{% static 'shunli/assets/products/pipes/shuangmao-pipe1.JPG'%}" alt="双猫管子钳">
                 <div class="card-body">
@@ -157,7 +160,7 @@
                 </div>
             </div> 
         </div>
-        <div class="col-sm-3">
+        <div class="col-3 col-sm-3">
             <div class="card"> 
                 <img class="img-fluid" src="{% static 'shunli/assets/products/pipes/shunli-pipe-1.JPG'%}" alt="顺利管子钳">
                 <div class="card-body">
@@ -230,7 +233,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-6 form-group">
+          <div class="col-sm-6 form-group" >
             {% comment %} <input class="form-control" id="phone" name="phone" placeholder="电话" type="text" required> {% endcomment %}
             {{form.phone|as_crispy_field}}
           </div>
